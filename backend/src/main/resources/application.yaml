@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: tracker
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/expense_tracker
+    username: root
+    password: Eswar@2004
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: lakshman23122001@gmail.com
+    password: njywcximjttmqpci    # Use a Google App Password, not your regular password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  integration:
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: health
+
+#logging:
+#  level:
+#    org.springframework.security: TRACE
+
+jwt:
+  secrect: "e0832e5073631c649f94a191161c01e2816390a46b9755d51d130eea47f90a1f"
+  expiration: 3600000
+
+server:
+  servlet:
+    context-path: /api
