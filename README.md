@@ -1,4 +1,4 @@
-# 💰 Finance Tracker
+# 💰 Expense Tracker
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/frontend-React-61DAFB?logo=react&logoColor=black)
